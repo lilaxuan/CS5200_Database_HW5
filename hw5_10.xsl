@@ -15,20 +15,37 @@
             </tr>
             <xsl:for-each select="Reviews/Review">
 
-                    <xsl:variable name="res" select="RestaurantId">
+                    <!-- <xsl:variable name="resId" select="RestaurantId">
+                    </xsl:variable> -->
+                    <xsl:variable name="restaurantName" select="Name">
                     </xsl:variable>
                     <xsl:variable name="uname" select="UserName">
-
                     </xsl:variable>
+                    <!-- <tr>
+                      <xsl:variable name="rId" select="RestaurantId">
+                    </xsl:variable> -->
+
                     <tr>
                         <td>
+                            <!-- <xsl:value-of select="RestaurantId">
+                            </xsl:value-of> -->
+
+                            <!-- <xsl:value-of select="../../Companys/Company/Restaurants/Restaurant[Name/text()=$restaurantName]/Name">
+                            </xsl:value-of> -->
+
+                            <xsl:value-of select="../../Companys/Company/Restaurants/Restaurant[RestaurantId=current()/RestaurantId]/Name">
+                            </xsl:value-of>
+
+                        </td>
+                        <!-- <td> -->
 <!--                            <xsl:value-of select="../../Companys/Company/Restaurants/Restaurant[Name/text()=$restaurant]/Name"></xsl:value-of>-->
-                            <xsl:value-of select="../../Companys/Company/Restaurants/Restaurant
+                            <!-- <xsl:value-of select="../../Companys/Company/Restaurants/Restaurant
                             [Name/text()=$res]
                             /Name">
 
                             </xsl:value-of>
-                        </td>
+                        </td> -->
+
                         <td>
                             <xsl:value-of select="../../Users/User
                             [UserName/text()=$uname]
