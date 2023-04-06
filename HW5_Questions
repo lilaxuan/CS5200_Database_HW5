@@ -1,0 +1,42 @@
+HW 5. XSLT
+Submission Instructions
+Use the following format for each of your XSL files:
+hw5_N.xsl, where N is the exercise number. For example:
+hw5_1.xsl.
+Package your files in .zip format, and submit on Canvas.
+Submit by 11:59PM on the due date on Canvas.
+Assignment
+Create XSLT templates for each of the exercises below. For references and examples of XSLT templates, see the XSLT lecture: http://goo.gl/8e4OJS. Use this XML content as the review application input file for each of the exercises: http://goo.gl/5ibZvS. The expected output for each exercise is a HTML table.
+
+1. Map each CompanyName to the company’s About.
+Expected output: http://goo.gl/DLNLSW
+
+2. Map each RestaurantId to the Restaurant’s Name.
+Expected output: http://goo.gl/SWQsI7
+
+3. Map each CompanyName to an array of all its Restaurant Names.
+Expected output: http://goo.gl/p7Td86
+
+4. Now “unroll” the array of Restaurant Names so each row contains exactly one CompanyName and Restaurant Name.
+Expected output: https://goo.gl/ujqXMv
+
+5. Map each UserName to a count of their Reviews.
+Expected output: http://goo.gl/0Iv3X7
+
+6. Determine the count of Recommendations made by “username5”.
+Expected output: https://goo.gl/v8XY1G
+
+7. Map each Restaurant Name to a count of their Recommendations.
+Expected output: https://goo.gl/K108yD
+
+8. For each Review of “restaurantid1”, display the Review’s RestaurantId, UserName, and Rating.
+Expected output: https://goo.gl/E4jS1Y
+
+9. For each Review, display the Review’s RestaurantId, UserName, Rating, and the count of the UserName’s Recommendations for the RestaurantId.
+Expected output: https://goo.gl/C6Ta1M
+
+10. For each Review, display the Restaurant Name, User’s FirstName, and Review Rating.
+Expected output: https://goo.gl/gifyGO
+
+
+
