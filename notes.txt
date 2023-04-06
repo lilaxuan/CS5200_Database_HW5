@@ -1,0 +1,6 @@
+All files should be under the SaxonHE11-4J folder, 
+Otherwise it will throw the error https://saxonica.plan.io/boards/3/topics/8478
+
+Command line to generate the result.html file:
+java -cp "saxon-he-11.4.jar" net.sf.saxon.Transform -s:"ReviewApplication.xml" -xsl:"hw5_1.xsl" -o:"results_xsl.html"
+
